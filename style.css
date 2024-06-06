@@ -1,0 +1,374 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin: 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+  
+.navbar-brand {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+  
+.menu-icon {
+    margin-right: 20px;
+    cursor: pointer;
+    display: block;
+}
+  
+.menu-icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Farbe des Scrollleisten-Griffs */
+    border-radius: 5px; /* Radius der Scrollleisten-Griffs */
+  }
+
+.sidebar {
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    right: -3000px; /* Startposition rechts außerhalb des Bildschirms */
+    max-width: 300px;
+    min-width: 100px;
+    height: 100vh; /* Volle Höhe des Bildschirms */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease; /* Animation für ein- und ausklappen */
+  }
+  
+.sidebar ul {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+.sidebar ul li {
+    margin-bottom: 15px;
+  }
+  
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+@media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .sidebar {
+        width: 200px;
+        right: -3000px; /* Startposition rechts außerhalb des Bildschirms */
+    }
+}
+
+main{
+    margin-top: 75px;
+}
+
+.contains-image{
+    width: 100%;
+    height: calc(100vh - 75px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+#lhc-background{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url('/images/lhc-background.jpg'); /* Pfad zu deinem Bild */
+    background-size: cover; /* Bild proportional skalieren und das gesamte Fenster abdecken */
+    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat; /* Bild nicht wiederholen */
+}
+
+.bottom-left{
+    overflow: scroll;
+    z-index: 0;
+    position: relative;
+    left: 15%;
+    top: 15%;
+    max-height: 70%;
+    max-width: 70%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.bottom-left.function{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
+}
+
+.center{
+    height: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    position: relative;
+    max-height: 70%;
+    max-width: 100vw;    
+}
+
+#zentrieren{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-button {
+    background-color: transparent;
+    font-weight: 900;
+    border: none;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+.arrow-button:hover {
+    color: #666; /* Ändere die Farbe beim Hovern */
+}
+
+.grid-container {
+    max-height: 50vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns:  25px auto 25px; /* Vier Spalten mit gleicher Breite */
+    grid-gap: 10px; /* Abstand zwischen den Grid-Items */
+  }
+  
+.grid-item {
+    border-radius: 15px;
+    max-width: 100%;
+    text-align: center;
+}
+  
+.grid-item.time{
+    padding: 10px;
+    background-color: #f0f0f0;
+    overflow-x: scroll;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+} 
+
+.header1{
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+#Funktionsweise-background{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;    
+    background-image: url('/images/funktionsweise.jpg'); /* Pfad zu deinem Bild */
+    background-size: cover; /* Bild proportional skalieren und das gesamte Fenster abdecken */
+    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat; /* Bild nicht wiederholen */
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    max-width: 60%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ffffff;
+    border: 4px solid #439ebe;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 25%;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #f0f0f0;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f0f0f0 transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f0f0f0;
+    z-index: 0;
+    padding: 20px 30px;
+    background-color: #333;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      z-index: 999;
+      left: 60px;
+      border: medium solid #f0f0f0;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #333 transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+  
+.center-middle{
+    overflow: scroll;
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.contains-image.mitte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-list {
+    list-style: none; /* Entferne die Standardliste-Symbole */
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+  
+  .arrow-list li {
+    padding-top: 10px;
+    padding-left: 20px; /* Füge Platz für den Pfeil ein */
+    position: relative;
+  }
+  
+  .arrow-list li::before {
+    content: ""; /* Füge benutzerdefinierten Inhalt ein */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Breite des Pfeils */
+    height: 10px; /* Höhe des Pfeils */
+    background-color: #ffffff; /* Farbe des Pfeils */
+    clip-path: polygon(100% 50%, 0 0, 0 100%); /* Erstelle einen Pfeil mit Clip-Pfad */
+  }
+
+#zahlen-background{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    background-image: url('/images/zahlen.jpg'); /* Pfad zu deinem Bild */
+    background-size: cover; /* Bild proportional skalieren und das gesamte Fenster abdecken */
+    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat; /* Bild nicht wiederholen */
+}
+
+.remove{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    z-index: 10000;
+}
+
+footer {
+    
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.4);
+    background-color: #e4e4e4;
+    color: #484848;
+    padding: 20px;
+    text-align: center;
+}

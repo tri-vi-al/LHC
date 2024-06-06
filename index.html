@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LHC</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">Large Hadron Collider</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+              <div class="menu-icon-bar"></div>
+              <div class="menu-icon-bar"></div>
+              <div class="menu-icon-bar"></div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class=contains-image id="lhc-background">
+            <div class="bottom-left">
+                <div id="LHC">
+                    <h1 style="padding-left: 10px;">Large Hadron Collider</h1>
+                </div>
+                <p style="padding: 10px;">Der Begriff LHC steht für Large Hadron Collider. "Large" bezieht sich auf seine imposante Größe (ungefähr 27 km Umfang). "Hadron" deshalb, weil er Protonen oder Ionen beschleunigt, welche als Hadronen klassifiziert werden. Und "Collider", weil bei diesem Experiment zwei Strahlen von Teilchen in entgegengesetzte Richtungen bewegt werden und an vier Punkten kollidieren, wo sich die beiden Ringe der Maschine kreuzen.</p>
+            </div>
+        </div>
+        <div class="contains-image mitte">
+            <div class="center-middle">
+                <div id="Geschichte">
+                    <h1 class="header1">Geschichte des LHC's</h1>
+                </div>
+                <div class="timeline">
+                    <div class="container right">
+                      <div class="content">
+                        <h2>1980er Jahre</h2>
+                        <p>LHC wird als Nachfolger vom LEP geplant.</p>
+                      </div>
+                    </div>
+                    <div class="container right">
+                      <div class="content">
+                        <h2>1994</h2>
+                        <p>Der Cern-Rat genehmigt den Bau.</p>
+                      </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                          <h2>1998</h2>
+                          <p>Der Bau begann.</p>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>2008</h2>
+                          <p>Der 1. Protonenstrahl kreiste im LHC.</p>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>2009</h2>
+                          <p>Nach einem Unfall wurde der Betrieb wieder aufgenommen.</p>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>2010</h2>
+                          <p>Die 1. Kollision mit 7 TeV wurde durchgeführt.</p>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>2012</h2>
+                          <p>In diesem Jahr wurde das berüchtigte Higgs-Teilchen entdeckt.</p>
+                        </div>
+                      </div>
+                      <div class="container right">
+                        <div class="content">
+                          <h2>2015</h2>
+                          <p>Für einen weiteren Rekord sorgte eine Kollision mit ca. 13 TeV.</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class=contains-image id="Funktionsweise-background">
+            <div class="bottom-left function">
+                <div id="Funktionsweise">
+                    <h1 style="padding-left: 10px;">Funktionsweise</h1>
+                </div>
+                <p style="padding: 20px;">Der Large Hadron Collider (LHC) ist ein 27 Kilometer langer Ring aus supraleitenden Magneten und Beschleunigungsstrukturen, der am CERN betrieben wird. Er beschleunigt Teilchen in entgegengesetzten Richtungen durch zwei Strahlrohre im Ultrahochvakuum. Tausende Magnete (darunter Dipolmagnete und Quadrupolmagnete) lenken und fokussieren die Teilchenstrahlen, die bei maximaler Energie zur Kollision gebracht werden, um physikalische Phänomene zu untersuchen. Die supraleitenden Magnete werden auf -271°C gekühlt, um Energieverluste zu vermeiden.</p>
+            </div>
+        </div>
+        <div class=contains-image id="Errungenschaften-background">
+            <div class="center">
+                <div id="Errungenschaften">
+                    <h1 style="padding-left: 30px; padding-top: 30px;">Forschungsgebiete</h1>
+                </div>
+                <div id="zentrieren">
+                    <div class="grid-container">
+                        <button class="arrow-button grid-item" onclick="left()">&lt;</button>
+                        <div class="time grid-item">
+                            <h1 id="title">Higgs-Mechanismus</h1>
+                            <p id="title-content">
+                                Die Entdeckung des Higgs-Teilchens gelang mit dem Large Hadron Collider (LHC) am CERN. Dies steht im Zusammenhang mit dem Higgs-Mechanismus. Durch den Higgs-Mechanismus wird beschrieben, wie die grundlegende Eigenschaft „Masse“ auf der Ebene der Elementarteilchen zustande kommt.
+                            </p>
+                        </div>
+                        <button class="arrow-button grid-item" onclick="right()">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=contains-image id="zahlen-background">
+            <div class="bottom-left function">
+                <div id="zahlen">
+                    <h1 style="padding-left: 10px;">Large Hadron Collider</h1>
+                </div>
+                <ul class="arrow-list">
+                    <li>Umfang von 26.659 Metern</li>
+                    <li>Die Anzahl der Magneten liegt bei 9300</li>
+                    <li>Protonen rasen 11.245 Mal pro Sekunde durch den Ring</li>
+                    <li>Teilchen kollidieren mit bis zu 14 Tera-Elektronenvolt</li>
+                    <li>Hochpräzise Detektoren erfassen Milliarden von Kollisionen pro Sekunde</li>
+                    <li>Ein globales Computernetzwek verteilt die Daten</li>
+                    <!-- Weitere Listenelemente hier einfügen -->
+                  </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simon Molitor</p>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+          </div>
+        <ul id="menu-list">
+            <li class="menu-items" onclick="myFunction(this)">Large Hadron Collider</li>
+            <li class="menu-items" onclick="myFunction(this)">Geschichte</li>
+            <li class="menu-items" onclick="myFunction(this)">Funktionsweise</li>
+            <li class="menu-items" onclick="myFunction(this)">Errungenschaften</li>
+            <li class="menu-items" onclick="myFunction(this)">Fakten und Zahlen</li>
+        </ul>
+    </div>
+  <script src="/script.js"></script>
+</body>
+</html>
