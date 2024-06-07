@@ -162,7 +162,12 @@ main{
     grid-template-columns:  25px auto 25px; /* Vier Spalten mit gleicher Breite */
     grid-gap: 10px; /* Abstand zwischen den Grid-Items */
   }
-  
+
+#title-content{
+  max-height: 50vh;
+  overflow: scroll;
+}
+
 .grid-item {
     border-radius: 15px;
     max-width: 100%;
