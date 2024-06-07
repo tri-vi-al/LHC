@@ -2,6 +2,7 @@ html, body{
     width: 100%;
     margin: 0;
     padding: 0;
+    text-align:justify;
 }
 
 .navbar {
@@ -164,7 +165,10 @@ main{
   }
 
 #title-content{
-  max-height: 50vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
   overflow: scroll;
 }
 
