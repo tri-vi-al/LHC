@@ -265,7 +265,7 @@ main{
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #f0f0f0;
+    border: medium solid #333;
     border-width: 10px 10px 10px 0;
     border-color: transparent #f0f0f0 transparent transparent;
   }
@@ -305,7 +305,7 @@ main{
     .container::before {
       z-index: 999;
       left: 60px;
-      border: medium solid #f0f0f0;
+      border: medium solid #333;
       border-width: 10px 10px 10px 0;
       border-color: transparent #333 transparent transparent;
     }
